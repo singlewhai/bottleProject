@@ -25,7 +25,11 @@ compiled source #
 *.log
 *.sql
 *.sqlite
-  
+
+# Floder #
+##########
+*/venv/*.*
+
 # OS generated files #
 ######################
 .DS_Store
