@@ -28,7 +28,7 @@ compiled source #
 
 # Floder #
 ##########
-*/venv/*.*
+/venv/*.*
 
 # OS generated files #
 ######################
