@@ -30,6 +30,7 @@ compiled source #
 # Floder #
 ##########
 venv
+node_modules
 
 # OS generated files #
 ######################

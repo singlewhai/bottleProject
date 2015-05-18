@@ -1,0 +1,20 @@
+#!/usr/bin/env python
+import os, sys
+
+# When OS X users doublclick this file in Finder, the cwd is
+# user's homedir. So let's manually change to this www dir first.
+os.chdir(sys.path[0])
+
+PORT = 8081
+
+try:
+    import SimpleHTTPServer
+    import SocketServer
+
+    Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
+
+    httpd = SocketServer.TCPServer(("", PORT), Handler)
+    print "This website is now running at --> http://localhost:8081"
+    httpd.serve_forever()
+except Exception as err:
+    print err
